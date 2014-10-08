@@ -1,0 +1,33 @@
+
+Time Taken:
+1.5 days to complete
+
+Design:
+MVC design pattern is used to separate data and user interface concerns so that changes to the user interface will not affect data handling making the application more maintainable.
+
+Model (FootballStatsModel and TableModel) - represents data from interface file football.dat and the business logic to calculate the most consistent team
+View (FootballStatsView) - class where components are arranged and components' properties are set. 
+Controller (FootballStatsController) - it keeps model and view separated. controls all actions and data flow from model and view.
+
+
+Assumption:
+- data from file is tab delimited
+- first line of file contains table headers
+- file football.dat is on the same folder as the executable jar
+- no sort functionality
+- data from text file is displayed as is, data is not validated.
+- any changes to football.dat will not refresh the table
+- netbeans IDE designer is used to design user interface
+
+
+Exception Handling:
+- "Unable to load file" is displayed when file is not found
+- "Unable to calculate" is displayed when scores contain letters or special characters
+
+
+Possible improvements:
+- data validation of football.dat
+- improve algorithm in calculating most consistent team
+- display multiple teams when teams have equal consistency ratings
+- maintain error messages and location of football.dat in a properties file
+- create test scripts for regression testing

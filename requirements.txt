@@ -1,0 +1,9 @@
+Scenario - Football table
+There are four main requirements of this coding exercise:
+1. Write a standalone application that will read in values from a pre-defined text file, 'football.dat'. The file includes information relating to football teams, the games played, goals scored per match, etc.
+2. Display the data within the file in a JTable in the same order as that within the text file.
+3. Include a button in the frame that, when clicked, calculates the most consistent team. The definition of 'consistent' is left open.
+4. The calculation of the most consistent team will be performed off the Event Dispatch Thread (EDT), such that after pressing the button the EDT will not freeze while calculating.
+
+Packaging
+Package the source code alongside a built Football.jar file. The jar file must be runnable, and the code must compile without exceptions.
